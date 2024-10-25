@@ -1,21 +1,19 @@
 import turtle
-import random as rand
+import random
 
-spot_colors = ["red", "green", "blue", "yellow", "purple", "orange"]
-spot_sizes = [0.75, 1, 1.5, 2]
+turtle_colors=["red", "green", "blue", "yellow", "purple", "cyan"]
+turtle_sizes=[0.75, 1, 1.5, 2]
 score = 0
 timer = 30
 timer_up = False
 
-
-wn = turtle.Screen()
+wn=turtle.Screen()
 wn.bgcolor("black")
 
-
-spot = turtle.Turtle()
-spot.shape("circle")
-spot.penup()
-spot.hideturtle()  # hide initially
+t = turtle.Turtle()  
+t.shape("circle")
+t.penup()
+t.hideturtle()  
 
 score_writer = turtle.Turtle()
 score_writer.hideturtle()
@@ -37,22 +35,22 @@ def start_game():
     update_score()
     countdown()
     change_position()
-    spot.showturtle()
+    t.showturtle()
 
 def update_score():
     score_writer.clear()
     score_writer.write(f"Score: {score}", font=("Arial", 20, "normal"))
 
 def change_position():
-    spot.fillcolor(rand.choice(spot_colors))
-    spot.stamp()  # leave a stamp
-    spot.shapesize(rand.choice(spot_sizes))
-    spot.goto(rand.randint(-190, 190), rand.randint(-140, 140))
+    t.fillcolor(random.choice(turtle_colors))  
+    t.stamp()  # leave a stamp
+    t.shapesize(random.choice(turtle_sizes))  # updated list name
+    t.goto(random.randint(-190, 190), random.randint(-140, 140))
 
-def spot_clicked(x, y):
+def t_clicked(x, y):  # renamed function
     global score
     if not timer_up:
-        score += 1
+        score+=1
         update_score()
         change_position()
 
@@ -60,15 +58,15 @@ def countdown():
     global timer
     global timer_up
     if timer > 0:
-        timer -= 1
+        timer-=1
         counter_writer.clear()
         counter_writer.write(f"Time left: {timer}s", font=("Arial", 20, "normal"))
         wn.ontimer(countdown, 1000)
     else:
-        timer_up = True
-        spot.hideturtle()
+        timer_up=True
+        t.hideturtle()
         counter_writer.write("Time's up!", font=("Arial", 20, "normal"))
 
-spot.onclick(spot_clicked)
+t.onclick(t_clicked)  
 start_game()
 wn.mainloop()
