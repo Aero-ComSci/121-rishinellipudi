@@ -27,7 +27,6 @@ counter_writer.penup()
 counter_writer.goto(0, -250)
 counter_writer.color("white")
 
-# Start the game
 def start_game():
     global score, timer_up
     score = 0
@@ -43,11 +42,11 @@ def update_score():
 
 def change_position():
     t.fillcolor(random.choice(turtle_colors))  
-    t.stamp()  # leave a stamp
-    t.shapesize(random.choice(turtle_sizes))  # updated list name
+    t.stamp()  
+    t.shapesize(random.choice(turtle_sizes))  
     t.goto(random.randint(-190, 190), random.randint(-140, 140))
 
-def t_clicked(x, y):  # renamed function
+def t_clicked(x, y):  
     global score
     if not timer_up:
         score+=1
