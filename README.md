@@ -6,7 +6,7 @@
 2. Complete the addigional features:
    ![image](https://github.com/user-attachments/assets/f99d7777-6fea-47e5-bf9a-fc452f835952)
 
-3. Create a video of the app working with all of the additional features. Make the video small enough to render here or upload to a video service witha aviawable link.
+3. Video of app working with additional features: https://drive.google.com/file/d/1Tgf0o8nieR9NG3WkRUrYuEhxrmoVf5uf/view?usp=sharing
 
 4. Choose two snapshots of code that demonstrate the algorithm(s) used to implement the additional features. Explain the code in the screenshots.
 
