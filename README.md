@@ -12,6 +12,8 @@
 
    https://github.com/Aero-ComSci/121-rishinellipudi/blob/main/images/Screenshot%202024-10-25%20at%206.48.00%20PM.png
 
+   https://github.com/Aero-ComSci/121-rishinellipudi/blob/main/images/Screenshot%202024-10-25%20at%206.48.07%20PM.png
+
    
 
 
