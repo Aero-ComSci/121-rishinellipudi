@@ -8,7 +8,11 @@
 
 3. Video of app working with additional features: https://drive.google.com/file/d/1Tgf0o8nieR9NG3WkRUrYuEhxrmoVf5uf/view?usp=sharing
 
-4. Choose two snapshots of code that demonstrate the algorithm(s) used to implement the additional features. Explain the code in the screenshots.
+4. Two snapshots of code that demonstrate the algorithms used to implement the additional features with code explanation.
+
+   https://github.com/Aero-ComSci/121-rishinellipudi/blob/main/images/Screenshot%202024-10-25%20at%206.48.00%20PM.png
+
+   
 
 
 
